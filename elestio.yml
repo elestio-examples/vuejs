@@ -6,6 +6,8 @@ config:
     buildDir: 'dist'
     runCommand: 'npm run dev'
     installCommand: 'npm install'
+    icon: 'src/assets/logo.svg'
+    screenshot: 'src/assets/vuejs.png'
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -24,3 +26,6 @@ exposedPorts:
 environments:
     -  key: 'ENV'
        value: 'production'
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"       
